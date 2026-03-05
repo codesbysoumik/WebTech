@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student List DOM Practice</title>
+    <link rel="stylesheet" href="dom.css" />
+  </head>
+  <body>
+    <h1>Student List</h1>
+
+    <!-- Student Form -->
+    <form id="student-form">
+      <label for="student-name">Student Name:</label>
+      <input type="text" id="student-name" placeholder="Enter student name" />
+      <label for="student-roll">Roll No.:</label>
+      <input type="text" id="student-roll" placeholder="Enter roll number" />
+      <button id="add-btn" type="submit">Add Student</button>
+    </form>
+
+    <!-- Search and controls -->
+    <div class="controls-top">
+      <input id="search-input" type="text" placeholder="Search student" />
+      <button id="sort-btn" type="button">Sort A–Z</button>
+      <button id="highlight-first-btn" type="button">
+        Highlight First Student
+      </button>
+    </div>
+
+    <!-- Student List -->
+    <ul id="student-list">
+      <!-- New students will be added here -->
+    </ul>
+
+    <p id="total-count">Total students: 0</p>
+    <p id="presence-count">Present: 0, Absent: 0</p>
+
+    <!-- JS file -->
+    <script src="dom.js"></script>
+  </body>
+</html>
