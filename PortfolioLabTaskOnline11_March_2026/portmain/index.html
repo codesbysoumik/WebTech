@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M. A. Shahriar Rahman Soumik — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ───── HEADER / NAV ───── -->
+  <header id="site-header">
+    <nav class="nav-container">
+      <div class="nav-logo">SR<span class="accent">.</span></div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon" id="theme-icon">☀</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ───── HOME SECTION ───── -->
+    <section id="home" class="section hero-section">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">BSc in CSE &nbsp;·&nbsp; American International University-Bangladesh</p>
+
+        <h1 class="hero-name">
+          <span class="hero-first" style="font-size:clamp(2rem,5vw,4.8rem);letter-spacing:0.04em;">M. A. SHAHRIAR</span>
+          <span class="hero-last" style="font-size:clamp(2rem,5vw,4.8rem);letter-spacing:0.04em;">RAHMAN SOUMIK</span>
+        </h1>
+
+        <p class="hero-tagline">
+          I build <span class="typed-wrapper"><span id="typed-text" class="typed-text"></span><span class="typed-cursor">|</span></span>
+        </p>
+
+        <p class="hero-intro">
+          CSE student at AIUB with a passion for building high-performance web
+          experiences. I bridge the gap between elegant design and solid engineering —
+          turning complex problems into intuitive, beautiful software.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Coding</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Technologies</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <div class="avatar-initials">SR</div>
+          </div>
+          <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+          <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag" style="--d:0s">Java</span>
+          <span class="skill-tag" style="--d:.1s">C#</span>
+          <span class="skill-tag" style="--d:.2s">Unity</span>
+          <span class="skill-tag" style="--d:.3s">Python</span>
+          <span class="skill-tag" style="--d:.4s">MySQL</span>
+          <span class="skill-tag" style="--d:.5s">JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── PROJECTS SECTION ───── -->
+    <section id="projects" class="section projects-section">
+      <div class="section-header">
+        <span class="section-label">02 — Featured Work</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">A selection of things I've built.</p>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="game">Game</button>
+        <button class="filter-btn" data-filter="app">Desktop App</button>
+      </div>
+
+      <!-- Cards rendered by JS -->
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- ───── CONTACT SECTION ───── -->
+    <section id="contact" class="section contact-section">
+      <div class="section-header">
+        <span class="section-label">03 — Say Hello</span>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">Have a project in mind? Let's talk.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <p class="contact-item-label">Email</p>
+              <p class="contact-item-value">23-54040-3@student.aiub.edu</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">⌖</span>
+            <div>
+              <p class="contact-item-label">Location</p>
+              <p class="contact-item-value">Dhaka, Bangladesh</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <p class="contact-item-label">Availability</p>
+              <p class="contact-item-value">Open to opportunities</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub">GH</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">LI</a>
+            <a href="#" class="social-link" aria-label="Twitter">TW</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="off" />
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="off" />
+              <span class="form-error" id="email-error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" autocomplete="off" />
+            <span class="form-error" id="subject-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span id="btn-text">Send Message</span>
+            <span id="btn-sending" class="hidden">Sending…</span>
+          </button>
+
+          <div class="form-success hidden" id="form-success">
+            <span>✓</span> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2025 M. A. Shahriar Rahman Soumik. Built with HTML, CSS &amp; JS.</p>
+      <p class="footer-made">Crafted with care ♥</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button class="s
